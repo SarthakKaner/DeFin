@@ -1,8 +1,44 @@
-# React + Vite
+# (De)Fin: The Powerhouse of AI Agents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can visit the site at https://defin.one
 
-Currently, two official plugins are available:
+(De)Fin is an advanced AI platform designed specifically for the blockchain and Web3 space. It empowers users with cutting-edge AI agents for research and trading, providing a seamless experience for navigating and capitalizing on the dynamic world of decentralized finance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+(De)Fin aims to transform decision-making in the crypto and Web3 space with AI agents designed for research and trading. It simplifies, accelerates, and optimizes the user experience, making it easier to navigate and capitalize on blockchain and decentralized finance opportunities.
+
+## Features
+
+- **Research Agent**: Simplifies complex blockchain and Web3 data into actionable insights.
+  - Coming soon
+
+- **Trading Agent**: Automates and optimizes trade execution in the crypto and Web3 markets.
+  - Coming soon
+
+
+## Installation
+
+To get started with (De)Fin, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/defin.git
+   cd defin
+
+2. Install Dependencies
+npm install
+
+3. Start the Development Server
+npm run dev
+
