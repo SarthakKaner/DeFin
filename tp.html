@@ -1,0 +1,153 @@
+<div class="center-container">
+  <div class="flex items-center px-2">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <!-- Centered flex container -->
+      <div class="flex items-center justify-center min-h-screen">
+        <!-- Cat container with responsive spacing -->
+        <div
+          class="cat relative w-full max-w-sm md:max-w-md lg:max-w-lg mx-auto mt-4 md:mt-8 lg:mt-12"
+        >
+          <div class="ear ear--left"></div>
+          <div class="ear ear--right"></div>
+          <div class="face">
+            <div class="eye eye--left">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="eye eye--right">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="muzzle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-lg overflow-hidden">
+      <div class="py-4 px-6">
+        <h1
+          id="typewriter"
+          class="text-5xl font-bold text-[rgb(80,210,193)]"
+        ></h1>
+        <p class="text-lg text-white text-center">
+          Redefine how on chain wealth is created, accessed, and managed by
+          anyone, anywhere.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-4 px-6 mt-4">
+    <div class="flex flex-wrap gap-4 justify-center items-center">
+      <div class="border rounded-lg px-4 py-2">
+        <div
+          id="days"
+          class="font-bold font-mono text-2xl text-white"
+        ></div>
+      </div>
+      <div class="border rounded-lg px-4 py-2">
+        <div
+          id="hours"
+          class="font-bold font-mono text-2xl text-white"
+        ></div>
+      </div>
+      <div class="border rounded-lg px-4 py-2">
+        <div
+          id="minutes"
+          class="font-bold font-mono text-2xl text-white"
+        ></div>
+      </div>
+      <div class="border rounded-lg px-4 py-2">
+        <div
+          id="seconds"
+          class="font-bold font-mono text-2xl text-white"
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      // Add at the beginning of script.js
+      document.addEventListener("DOMContentLoaded", function () {
+        const typewriterElement = document.getElementById("typewriter");
+        const text = "(De)Fin ";
+        let i = 0;
+
+        function typeWriter() {
+          if (i < text.length) {
+            setTimeout(typeWriter, 200);
+            typewriterElement.textContent += text.charAt(i);
+            i++;
+          } else {
+            // Add completed class when done
+            typewriterElement.classList.add("completed");
+          }
+        }
+
+        typeWriter();
+      });
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 26, 2025 00:00:00").getTime();
+
+      // Update the countdown every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the corresponding elements
+        document.getElementById("days").textContent = days + "d";
+        document.getElementById("hours").textContent = hours + "h";
+        document.getElementById("minutes").textContent = minutes + "m";
+        document.getElementById("seconds").textContent = seconds + "s";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 0);
+    </script>
+  </div>
+  <footer class="w-full py-4 px-6 text-center">
+    <p class="text-lg text-[rgb(80,210,193)] font-mono">
+      <span>DeFi trading hub powered by </span>
+      <span id="dynamic-text"></span>
+    </p>
+  </footer>
+</div>
+<script src="/particles.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dynamicTextElement = document.getElementById("dynamic-text");
+    const dynamicTexts = [
+      "research agents",
+      "trading agents",
+      "LLM",
+      "neural language",
+      "text commands",
+      "voice commands",
+    ];
+    let index = 0;
+
+    function changeText() {
+      dynamicTextElement.textContent = dynamicTexts[index];
+      index = (index + 1) % dynamicTexts.length;
+    }
+
+    setInterval(changeText, 2000); // Change text every 2 seconds
+    changeText(); // Initialize with the first text
+  });
+</script>
+</body>
+</html>
