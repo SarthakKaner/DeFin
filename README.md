@@ -10,9 +10,7 @@ You can visit the site at https://defin.one
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -42,3 +40,5 @@ npm install
 3. Start the Development Server
 npm run dev
 
+## Usage
+Once the development server is running, open your browser and navigate to http://localhost:3000 to access the (De)Fin platform.
