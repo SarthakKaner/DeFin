@@ -41,4 +41,4 @@ npm install
 npm run dev
 
 ## Usage
-Once the development server is running, open your browser and navigate to http://localhost:3000 to access the (De)Fin platform.
+Once the development server is running, open your browser and navigate to http://localhost:5173 to access the (De)Fin platform.
