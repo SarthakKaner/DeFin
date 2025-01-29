@@ -35,10 +35,12 @@ To get started with (De)Fin, follow these steps:
    cd defin
 
 2. Install Dependencies
-npm install
+    ```sh
+    npm install
 
 3. Start the Development Server
-npm run dev
+    ```sh
+    npm run dev
 
 ## Usage
 Once the development server is running, open your browser and navigate to http://localhost:5173 to access the (De)Fin platform.
