@@ -1,6 +1,6 @@
 # (De)Fin: The Powerhouse of AI Agents
 
-You can visit the site at https://defin.one
+You can visit the site at https://clever-gingersnap-c4c59f.netlify.app/
 
 (De)Fin is an advanced AI platform designed specifically for the blockchain and Web3 space. It empowers users with cutting-edge AI agents for research and trading, providing a seamless experience for navigating and capitalizing on the dynamic world of decentralized finance.
 
